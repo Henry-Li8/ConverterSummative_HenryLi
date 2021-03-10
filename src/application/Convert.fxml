@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="253.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ConvertController">
+   <children>
+      <TabPane prefHeight="253.0" prefWidth="430.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Welcome">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text fill="#000000be" layoutX="105.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to the Unit Converter">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                        <Text fill="#00000081" layoutX="165.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pick a tab to begin" />
+                        <Button layoutY="193.0" mnemonicParsing="false" onAction="#quit" text="Quit" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Currency">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="c1C" layoutX="14.0" layoutY="83.0" onAction="#a1C" prefWidth="150.0" />
+                        <TextField fx:id="u1C" layoutX="14.0" layoutY="56.0" onKeyReleased="#a1C" prefHeight="27.0" prefWidth="150.0" />
+                        <TextField fx:id="u2C" layoutX="266.0" layoutY="56.0" onKeyReleased="#a2C" prefHeight="27.0" prefWidth="150.0" />
+                        <ComboBox fx:id="c2C" layoutX="266.0" layoutY="83.0" onAction="#a2C" prefWidth="150.0" />
+                        <Text fill="#00000080" layoutX="208.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Button layoutY="193.0" mnemonicParsing="false" onAction="#quit" text="Quit" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Length">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="u1L" layoutX="14.0" layoutY="56.0" onKeyReleased="#a1L" prefHeight="27.0" prefWidth="150.0" />
+                        <ComboBox fx:id="c1L" layoutX="14.0" layoutY="83.0" onAction="#a1L" prefWidth="150.0" />
+                        <TextField fx:id="u2L" layoutX="266.0" layoutY="56.0" onKeyReleased="#a2L" prefHeight="27.0" prefWidth="150.0" />
+                        <ComboBox fx:id="c2L" layoutX="266.0" layoutY="83.0" onAction="#a2L" prefWidth="150.0" />
+                        <Text fill="#00000081" layoutX="208.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Button layoutY="193.0" mnemonicParsing="false" onAction="#quit" text="Quit" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Temperature">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="c1T" layoutX="14.0" layoutY="83.0" onAction="#a1T" prefWidth="150.0" />
+                        <TextField fx:id="u1T" layoutX="14.0" layoutY="56.0" onKeyReleased="#a1T" prefHeight="27.0" prefWidth="150.0" />
+                        <TextField fx:id="u2T" layoutX="266.0" layoutY="56.0" onKeyReleased="#a2T" prefHeight="27.0" prefWidth="150.0" />
+                        <ComboBox fx:id="c2T" layoutX="266.0" layoutY="83.0" onAction="#a2T" prefWidth="150.0" />
+                        <Text fill="#0000007e" layoutX="208.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                        <Button layoutY="193.0" mnemonicParsing="false" onAction="#quit" text="Quit" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Volume">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutY="193.0" mnemonicParsing="false" onAction="#quit" text="Button" />
+                        <ComboBox fx:id="c1V" layoutX="14.0" layoutY="83.0" onAction="#a1V" prefWidth="150.0" />
+                        <ComboBox fx:id="c2V" layoutX="266.0" layoutY="83.0" onAction="#a2V" prefWidth="150.0" />
+                        <TextField fx:id="u1V" layoutX="14.0" layoutY="56.0" onKeyReleased="#a1V" prefHeight="27.0" prefWidth="150.0" />
+                        <TextField fx:id="u2V" layoutX="266.0" layoutY="56.0" onKeyReleased="#a2V" prefHeight="27.0" prefWidth="150.0" />
+                        <Text fill="#00000080" layoutX="208.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="=">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
